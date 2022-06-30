@@ -1,0 +1,152 @@
+:root{
+    --main-color:#e6c292;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Pegypta;
+    src: url(./font/Pegypta-ALE6.ttf) format('truetype')  
+}
+@font-face {
+    font-family: Lms Egyptian Bookends;
+    src: url(./font/LmsEgyptianBookends-lKw0.ttf);
+}
+@font-face {
+    font-family:Candy Cane Personal Use Regular ;
+    src: url(./font/CandyCanePersonalUseRegular-WyaPv.ttf);
+}
+header{
+position: absolute;
+left: 0;
+top: 0;
+padding: 40px 130px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+z-index: 9999;
+}
+header .logo{
+    font-family:Lms Arial, Helvetica, sans-serif ;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+}
+
+header nav ul {
+display: flex;
+justify-content: center;
+align-items: center;
+list-style: none;
+}
+header nav ul li{
+margin-left: 15px;
+font-size: 17px;
+
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+header nav ul li a{
+text-decoration: none;
+color: white;
+padding: 10px 20px;
+border-radius: 20px;
+}
+header nav ul li a.login{
+    background-color: var(--main-color);
+}
+header nav ul li a:hover:not(.login){
+color: #300212;
+
+}
+header nav ul li a.login:hover {
+    background-color: #300212;
+}
+/* Небо */
+.section1{
+background: linear-gradient(180deg, rgba(183,87,87,1) 0%, rgba(253,29,29,0.9436189026391807) 50%, rgba(253,195,29,0.926812179950105) 100%);
+min-height: 100vh;
+position: relative;
+}
+.section1 .pytext{
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+top: 100px;
+color: var(--main-color);
+}
+.section1 .pytext span{
+    font-family:Candy Cane Personal Use Regular;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: white;
+}
+.section1 .pytext span.pyramids{
+    float: right;
+}
+/* Текст Про Тур */
+.section1 .pytext p{
+        background-image: url(./images/strrrr.png);
+        background-repeat: no-repeat;
+        background-size: 1945px;
+        background-position-x: -10px;
+        background-position-y: -1523px;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 200px;
+        font-family: Pegypta;
+        color: transparent;
+}
+.section1 img{
+    position: absolute;
+    object-fit: cover;
+    
+}
+/* back */
+.section1 img.pyramid{
+    width: 100%;
+    left: 0;
+    bottom: -248px;
+    top: 300px;
+    height: 110%;
+    z-index: 1;
+}
+/* Чайки */
+.section1 img.sunref1{
+left: 431px;
+top: 300px;
+width: 243px;
+z-index: 0;
+}
+/* Солнце */
+.section1 img.sky{
+left: 913px;
+top: 384px;
+width: 143px;
+z-index: 0;
+mix-blend-mode: lighten;
+}
+/* Облака */
+.section1 img.cloud1{
+right: 53px;
+top: 142px;
+width: 340px;
+mix-blend-mode: lighten;
+}
+.section1 img.cloud2{
+left: 120px;
+top: 292px;
+width: 316px;
+mix-blend-mode: lighten;
+}
+
